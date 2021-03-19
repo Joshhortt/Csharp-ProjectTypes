@@ -11,6 +11,20 @@ namespace UTStandardLibrary.Tests
 	public class DisplayMessagesTests  // this is the DisplayMessagesTests
 	{
 		[Fact]
+		public void GreetingShouldReturnGoToBedMessage()
+		{
+			// Arrange
+			DisplayMessages messages = new DisplayMessages();
+			string expected = "Go to bed Josh";   // 'expected' keyword
+
+			// Act
+			string actual = messages.Greeting("Josh", 2);  // 'actual' keyword
+
+			// Assert (this should have happened)
+			Assert.Equal(expected, actual);
+		}
+
+		[Fact]
 		public void GreetingShouldReturnGoodMorningMessage()
 		{
 			// Arrange
@@ -18,7 +32,7 @@ namespace UTStandardLibrary.Tests
 			string expected = "Good morning Josh";   // 'expected' keyword
 
 			// Act
-			string actual = messages.Greeting("Josh", 2);  // 'actual' keyword
+			string actual = messages.Greeting("Josh", 7);  // 'actual' keyword
 
 			// Assert (this should have happened)
 			Assert.Equal(expected, actual);
@@ -53,13 +67,13 @@ namespace UTStandardLibrary.Tests
 		}
 
 		[Theory]
-		[InlineData("Josh", 0, "Good morning Josh")]
-		[InlineData("Josh", 1, "Good morning Josh")]
-		[InlineData("Josh", 2, "Good morning Josh")]
-		[InlineData("Josh", 3, "Good morning Josh")]
-		[InlineData("Josh", 4, "Good morning Josh")]
-		[InlineData("Josh", 5, "Good morning Josh")]
-		[InlineData("Josh", 6, "Good morning Josh")]
+		[InlineData("Josh", 0, "Go to bed Josh")]
+		[InlineData("Josh", 1, "Go to bed Josh")]
+		[InlineData("Josh", 2, "Go to bed Josh")]
+		[InlineData("Josh", 3, "Go to bed Josh")]
+		[InlineData("Josh", 4, "Go to bed Josh")]
+		[InlineData("Josh", 5, "Go to bed Josh")]
+		[InlineData("Josh", 6, "Go to bed Josh")]
 		[InlineData("Josh", 7, "Good morning Josh")]
 		[InlineData("Josh", 8, "Good morning Josh")]
 		[InlineData("Josh", 9, "Good morning Josh")]

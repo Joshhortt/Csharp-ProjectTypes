@@ -12,10 +12,16 @@ namespace UnitTestStandardLibrary
 		{
 			string output = "";
 
-			if(hourOfTheDay < 12)
+			if(hourOfTheDay < 7)
+			{
+				output = $"Go to bed { firstName }";
+			}
+
+			else if(hourOfTheDay < 12)
 			{
 				output = $"Good morning { firstName }";
 			}
+
 			else if(hourOfTheDay < 18)
 			{
 				output = $"Good afternoon { firstName }";

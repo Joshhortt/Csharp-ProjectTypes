@@ -51,5 +51,46 @@ namespace UTStandardLibrary.Tests
 			// Assert (this should have happened)
 			Assert.Equal(expected, actual);
 		}
+
+		[Theory]
+		[InlineData("Josh", 0, "Good morning Josh")]
+		[InlineData("Josh", 1, "Good morning Josh")]
+		[InlineData("Josh", 2, "Good morning Josh")]
+		[InlineData("Josh", 3, "Good morning Josh")]
+		[InlineData("Josh", 4, "Good morning Josh")]
+		[InlineData("Josh", 5, "Good morning Josh")]
+		[InlineData("Josh", 6, "Good morning Josh")]
+		[InlineData("Josh", 7, "Good morning Josh")]
+		[InlineData("Josh", 8, "Good morning Josh")]
+		[InlineData("Josh", 9, "Good morning Josh")]
+		[InlineData("Josh", 10, "Good morning Josh")]
+		[InlineData("Josh", 11, "Good morning Josh")]
+		[InlineData("Josh", 12, "Good afternoon Josh")]
+		[InlineData("Josh", 13, "Good afternoon Josh")]
+		[InlineData("Josh", 14, "Good afternoon Josh")]
+		[InlineData("Josh", 15, "Good afternoon Josh")]
+		[InlineData("Josh", 16, "Good afternoon Josh")]
+		[InlineData("Josh", 17, "Good afternoon Josh")]
+		[InlineData("Josh", 18, "Good evening Josh")]
+		[InlineData("Josh", 19, "Good evening Josh")]
+		[InlineData("Josh", 20, "Good evening Josh")]
+		[InlineData("Josh", 21, "Good evening Josh")]
+		[InlineData("Josh", 22, "Good evening Josh")]
+		[InlineData("Josh", 23, "Good evening Josh")]
+		
+		public void GreetingShouldReturnExpectedValue(
+			string firstName,
+			int hourOfTheDay,
+			string expected)
+		{
+			// Arrange
+			DisplayMessages messages = new DisplayMessages();
+
+			// Act
+			string actual = messages.Greeting(firstName, hourOfTheDay);  // 'actual' keyword
+
+			// Assert (this should have happened)
+			Assert.Equal(expected, actual);
+		}
 	}
 }

@@ -1,0 +1,9 @@
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\bin\Debug\netcoreapp3.1\UnitTestStandardLibrary.deps.json
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\bin\Debug\netcoreapp3.1\UnitTestStandardLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\bin\Debug\netcoreapp3.1\UnitTestStandardLibrary.pdb
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\obj\Debug\netcoreapp3.1\UnitTestStandardLibrary.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\obj\Debug\netcoreapp3.1\UnitTestStandardLibrary.AssemblyInfoInputs.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\obj\Debug\netcoreapp3.1\UnitTestStandardLibrary.AssemblyInfo.cs
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\obj\Debug\netcoreapp3.1\UnitTestStandardLibrary.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\obj\Debug\netcoreapp3.1\UnitTestStandardLibrary.dll
+C:\Users\josec\Source\Repos\Csharp-ProjectTypes\02-UnitTests\UnitTestLApp\UnitTestStandardLibrary\obj\Debug\netcoreapp3.1\UnitTestStandardLibrary.pdb

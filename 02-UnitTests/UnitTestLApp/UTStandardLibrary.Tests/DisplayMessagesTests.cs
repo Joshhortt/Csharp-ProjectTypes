@@ -37,5 +37,19 @@ namespace UTStandardLibrary.Tests
 			// Assert (this should have happened)
 			Assert.Equal(expected, actual);
 		}
+
+		[Fact]
+		public void GreetingShouldReturnGoodEveningMessage()
+		{
+			// Arrange
+			DisplayMessages messages = new DisplayMessages();
+			string expected = "Good evening Josh";   // 'expected' keyword
+
+			// Act
+			string actual = messages.Greeting("Josh", 19);  // 'actual' keyword
+
+			// Assert (this should have happened)
+			Assert.Equal(expected, actual);
+		}
 	}
 }

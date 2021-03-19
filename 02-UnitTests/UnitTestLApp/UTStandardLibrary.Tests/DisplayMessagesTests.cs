@@ -5,7 +5,11 @@ using UnitTestStandardLibrary;
 using Xunit;
 
 // # 3 Acts to a good Unit Test: Arrange; Act; Asert. #
-// We use: expected value and Actual value keywords
+// We use: expected value and Actual value keywords.
+// A 'unit test' tests one unit of work only.
+// Unit tests only test public methods.
+// You should not test the dependencies.
+
 namespace UTStandardLibrary.Tests
 {
 	public class DisplayMessagesTests  // this is the DisplayMessagesTests

@@ -13,9 +13,8 @@ namespace WinFormMiniProject
 {
 	public partial class AddressEntry : Form
 	{
-		ISaveAddress _parent;  //Long term variable
+		ISaveAddress _parent;  
 		
-
 		public AddressEntry(ISaveAddress parent)
 		{
 			InitializeComponent();

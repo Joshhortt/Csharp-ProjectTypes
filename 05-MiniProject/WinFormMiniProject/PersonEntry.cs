@@ -19,10 +19,15 @@ namespace WinFormMiniProject
         {
             InitializeComponent();
 
-            addresses.Add(new AddressModel { StreetAddress = "Road D", City = "Lisbon", State = "Estremadura", ZipCode = "1200-165" });
-
-            addressesList.DataSource = addresses;
-            addressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);  // changed to AddressDisplayValue
+            AddressesList.DataSource = addresses;
+            AddressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);  // changed to AddressDisplayValue
         }
-    }
+
+		private void AddNewAddress_Click(object sender, EventArgs e)
+		{
+            // Open the Address Registration Form. Instantiate the new addres enry form
+            AddressEntry entry = new AddressEntry();
+            entry.Show();
+		}
+	}
 }

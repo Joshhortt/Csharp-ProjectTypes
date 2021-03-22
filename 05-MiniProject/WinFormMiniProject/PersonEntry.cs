@@ -22,7 +22,7 @@ namespace WinFormMiniProject
             addresses.Add(new AddressModel { StreetAddress = "Road D", City = "Lisbon", State = "Estremadura", ZipCode = "1200-165" });
 
             addressesList.DataSource = addresses;
-            addressesList.DisplayMember = nameof(AddressModel.StreetAddress);
+            addressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);  // changed to AddressDisplayValue
         }
     }
 }

@@ -11,13 +11,14 @@ namespace DemoLibrary
         public string State { get; set; }
         public string ZipCode { get; set; }
 
-		public string FullAddressView
-        {
-            get
-            {
-                return $"{ StreetAddress }, { City }, { State }  { ZipCode }";
-            }
-
-        }
+        // Full property with Lambda expression to replace the commented code below.
+        public string AddressDisplayValue => $"{ StreetAddress }, { City }, { State }  { ZipCode }";
+        //public string FullAddressView
+        //{
+        //    get
+        //    {
+        //        return $"{ StreetAddress }, { City }, { State }  { ZipCode }";
+        //    }
+        //}
     }
 }

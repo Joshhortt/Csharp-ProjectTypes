@@ -110,13 +110,14 @@
 			// 
 			// addNewAddress
 			// 
+			this.addNewAddress.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.addNewAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.addNewAddress.Location = new System.Drawing.Point(378, 228);
 			this.addNewAddress.Name = "addNewAddress";
 			this.addNewAddress.Size = new System.Drawing.Size(74, 39);
 			this.addNewAddress.TabIndex = 4;
 			this.addNewAddress.Text = "Add";
-			this.addNewAddress.UseVisualStyleBackColor = true;
+			this.addNewAddress.UseVisualStyleBackColor = false;
 			// 
 			// saveRecord
 			// 
@@ -180,7 +181,7 @@
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(7);
 			this.Name = "PersonEntry";
-			this.Text = "Person Entry Form by Tim Corey";
+			this.Text = "Person Entry Form";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

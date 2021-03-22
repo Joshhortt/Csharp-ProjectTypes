@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WinFormMiniProject
 {
-    public partial class PersonEntry : Form
+    public partial class PersonEntry : Form, ISaveAddress
     {
         BindingList<AddressModel> addresses = new BindingList<AddressModel>();
 
@@ -20,14 +20,21 @@ namespace WinFormMiniProject
             InitializeComponent();
 
             AddressesList.DataSource = addresses;
-            AddressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);  // changed to AddressDisplayValue
+            AddressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);  
         }
 
 		private void AddNewAddress_Click(object sender, EventArgs e)
 		{
-            // Open the Address Registration Form. Instantiate the new addres enry form
+            AddressModel newAddress = new AddressModel();
+
             AddressEntry entry = new AddressEntry();
+
             entry.Show();
+		}
+
+		public void SaveAddress(AddressModel address)
+		{
+			addresses.Add(address);
 		}
 	}
 }

@@ -31,12 +31,12 @@ namespace WinFormMiniProject
 		{
 			this.ARForm = new System.Windows.Forms.Label();
 			this.AddressDashboardLabel = new System.Windows.Forms.Label();
-			this.CityText = new System.Windows.Forms.TextBox();
-			this.StreetAddressText = new System.Windows.Forms.TextBox();
+			this.cityText = new System.Windows.Forms.TextBox();
+			this.streetAddressText = new System.Windows.Forms.TextBox();
 			this.StreetAddressLabel = new System.Windows.Forms.Label();
 			this.CityLabel = new System.Windows.Forms.Label();
-			this.ZipCodeText = new System.Windows.Forms.TextBox();
-			this.StateText = new System.Windows.Forms.TextBox();
+			this.zipCodeText = new System.Windows.Forms.TextBox();
+			this.stateText = new System.Windows.Forms.TextBox();
 			this.StateLabel = new System.Windows.Forms.Label();
 			this.ZipCodeLabel = new System.Windows.Forms.Label();
 			this.SaveAddressRecord = new System.Windows.Forms.Button();
@@ -45,40 +45,39 @@ namespace WinFormMiniProject
 			// ARForm
 			// 
 			this.ARForm.AutoSize = true;
-			this.ARForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ARForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ARForm.Location = new System.Drawing.Point(44, 69);
 			this.ARForm.Name = "ARForm";
-			this.ARForm.Size = new System.Drawing.Size(258, 24);
+			this.ARForm.Size = new System.Drawing.Size(160, 25);
 			this.ARForm.TabIndex = 13;
-			this.ARForm.Text = "Address Registration Form";
-			this.ARForm.Click += new System.EventHandler(this.label2_Click);
+			this.ARForm.Text = "Address Entry";
 			// 
 			// AddressDashboardLabel
 			// 
 			this.AddressDashboardLabel.AutoSize = true;
 			this.AddressDashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.AddressDashboardLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.AddressDashboardLabel.Location = new System.Drawing.Point(308, 59);
+			this.AddressDashboardLabel.Location = new System.Drawing.Point(379, 59);
 			this.AddressDashboardLabel.Name = "AddressDashboardLabel";
-			this.AddressDashboardLabel.Size = new System.Drawing.Size(175, 37);
+			this.AddressDashboardLabel.Size = new System.Drawing.Size(93, 37);
 			this.AddressDashboardLabel.TabIndex = 12;
-			this.AddressDashboardLabel.Text = "Dashboard";
+			this.AddressDashboardLabel.Text = "Form";
 			// 
-			// CityText
+			// cityText
 			// 
-			this.CityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.CityText.Location = new System.Drawing.Point(192, 163);
-			this.CityText.Name = "CityText";
-			this.CityText.Size = new System.Drawing.Size(280, 29);
-			this.CityText.TabIndex = 11;
+			this.cityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cityText.Location = new System.Drawing.Point(192, 163);
+			this.cityText.Name = "cityText";
+			this.cityText.Size = new System.Drawing.Size(280, 29);
+			this.cityText.TabIndex = 11;
 			// 
-			// StreetAddressText
+			// streetAddressText
 			// 
-			this.StreetAddressText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.StreetAddressText.Location = new System.Drawing.Point(192, 117);
-			this.StreetAddressText.Name = "StreetAddressText";
-			this.StreetAddressText.Size = new System.Drawing.Size(280, 29);
-			this.StreetAddressText.TabIndex = 10;
+			this.streetAddressText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.streetAddressText.Location = new System.Drawing.Point(192, 117);
+			this.streetAddressText.Name = "streetAddressText";
+			this.streetAddressText.Size = new System.Drawing.Size(280, 29);
+			this.streetAddressText.TabIndex = 10;
 			// 
 			// StreetAddressLabel
 			// 
@@ -100,21 +99,21 @@ namespace WinFormMiniProject
 			this.CityLabel.TabIndex = 9;
 			this.CityLabel.Text = "City";
 			// 
-			// ZipCodeText
+			// zipCodeText
 			// 
-			this.ZipCodeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.ZipCodeText.Location = new System.Drawing.Point(192, 257);
-			this.ZipCodeText.Name = "ZipCodeText";
-			this.ZipCodeText.Size = new System.Drawing.Size(280, 29);
-			this.ZipCodeText.TabIndex = 17;
+			this.zipCodeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.zipCodeText.Location = new System.Drawing.Point(192, 257);
+			this.zipCodeText.Name = "zipCodeText";
+			this.zipCodeText.Size = new System.Drawing.Size(280, 29);
+			this.zipCodeText.TabIndex = 17;
 			// 
-			// StateText
+			// stateText
 			// 
-			this.StateText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.StateText.Location = new System.Drawing.Point(192, 211);
-			this.StateText.Name = "StateText";
-			this.StateText.Size = new System.Drawing.Size(280, 29);
-			this.StateText.TabIndex = 16;
+			this.stateText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.stateText.Location = new System.Drawing.Point(192, 211);
+			this.stateText.Name = "stateText";
+			this.stateText.Size = new System.Drawing.Size(280, 29);
+			this.stateText.TabIndex = 16;
 			// 
 			// StateLabel
 			// 
@@ -146,6 +145,7 @@ namespace WinFormMiniProject
 			this.SaveAddressRecord.TabIndex = 18;
 			this.SaveAddressRecord.Text = "Save";
 			this.SaveAddressRecord.UseVisualStyleBackColor = false;
+			this.SaveAddressRecord.Click += new System.EventHandler(this.SaveAddressRecord_Click);
 			// 
 			// AddressEntry
 			// 
@@ -153,14 +153,14 @@ namespace WinFormMiniProject
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(528, 535);
 			this.Controls.Add(this.SaveAddressRecord);
-			this.Controls.Add(this.ZipCodeText);
-			this.Controls.Add(this.StateText);
+			this.Controls.Add(this.zipCodeText);
+			this.Controls.Add(this.stateText);
 			this.Controls.Add(this.StateLabel);
 			this.Controls.Add(this.ZipCodeLabel);
 			this.Controls.Add(this.ARForm);
 			this.Controls.Add(this.AddressDashboardLabel);
-			this.Controls.Add(this.CityText);
-			this.Controls.Add(this.StreetAddressText);
+			this.Controls.Add(this.cityText);
+			this.Controls.Add(this.streetAddressText);
 			this.Controls.Add(this.StreetAddressLabel);
 			this.Controls.Add(this.CityLabel);
 			this.Name = "AddressEntry";
@@ -174,12 +174,12 @@ namespace WinFormMiniProject
 
 		private System.Windows.Forms.Label ARForm;
 		private System.Windows.Forms.Label AddressDashboardLabel;
-		private System.Windows.Forms.TextBox CityText;
-		private System.Windows.Forms.TextBox StreetAddressText;
+		private System.Windows.Forms.TextBox cityText;
+		private System.Windows.Forms.TextBox streetAddressText;
 		private System.Windows.Forms.Label StreetAddressLabel;
 		private System.Windows.Forms.Label CityLabel;
-		private System.Windows.Forms.TextBox ZipCodeText;
-		private System.Windows.Forms.TextBox StateText;
+		private System.Windows.Forms.TextBox zipCodeText;
+		private System.Windows.Forms.TextBox stateText;
 		private System.Windows.Forms.Label StateLabel;
 		private System.Windows.Forms.Label ZipCodeLabel;
 		private System.Windows.Forms.Button SaveAddressRecord;

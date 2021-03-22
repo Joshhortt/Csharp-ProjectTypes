@@ -25,9 +25,7 @@ namespace WinFormMiniProject
 
 		private void AddNewAddress_Click(object sender, EventArgs e)
 		{
-            AddressModel newAddress = new AddressModel();
-
-            AddressEntry entry = new AddressEntry();
+            AddressEntry entry = new AddressEntry(this);
 
             entry.Show();
 		}

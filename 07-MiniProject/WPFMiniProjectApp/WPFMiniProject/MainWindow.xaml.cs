@@ -42,5 +42,16 @@ namespace WPFMiniProject
 
 			entry.Show();
 		}
+
+		private void SavePerson_Click(object sender, RoutedEventArgs e)
+		{
+			PersonModel person = new PersonModel
+			{
+				FirstName = firstNameText.Text,
+				LastName = lastNameText.Text,
+				IsActive = (activeCheckbox.IsChecked ?? false),
+				Addresses = addresses.ToList()
+			};
+		}
 	}
 }

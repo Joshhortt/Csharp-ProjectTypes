@@ -27,6 +27,16 @@ namespace WPFMiniProject
 		public MainWindow()
 		{
 			InitializeComponent();
+
+			addressesList.ItemsSource = addresses;
+
+			//addresses.Add(new AddressModel
+			//{
+			//	StreetAddress = "Rua D",
+			//	City = "Lisbon",
+			//	State = "Estremadura",
+			//	ZipCode = "1200-165"
+			//});
 		}
 	}
 }

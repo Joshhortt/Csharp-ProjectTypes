@@ -83,6 +83,7 @@
 			Grid.Column="2" 
 			Width="50"
 			HorizontalAlignment="Right"
+			Click="AddAddress_Click"
 			Margin="0 25 0 0">Add</Button>
 
 		<!--Rows 4-->

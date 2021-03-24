@@ -38,6 +38,8 @@ namespace WPFMiniProject
 			};
 
 			_parent.SaveAddress(address);
+
+			this.Close();
 		}
 	}
 }

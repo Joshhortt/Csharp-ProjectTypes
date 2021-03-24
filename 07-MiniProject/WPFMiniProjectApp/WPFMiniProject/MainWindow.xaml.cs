@@ -21,7 +21,7 @@ namespace WPFMiniProject
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class MainWindow : Window, ISaveAddress
 	{
 		BindingList<AddressModel> addresses = new BindingList<AddressModel>();
 		public MainWindow()
@@ -29,14 +29,18 @@ namespace WPFMiniProject
 			InitializeComponent();
 
 			addressesList.ItemsSource = addresses;
+		}
 
-			//addresses.Add(new AddressModel
-			//{
-			//	StreetAddress = "Rua D",
-			//	City = "Lisbon",
-			//	State = "Estremadura",
-			//	ZipCode = "1200-165"
-			//});
+		public void SaveAddress(AddressModel address)
+		{
+			addresses.Add(address);
+		}
+
+		private void AddAddress_Click(object sender, RoutedEventArgs e)
+		{
+			AddressEntry entry = new AddressEntry(this);
+
+			entry.Show();
 		}
 	}
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using MvcMiniProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,13 @@ namespace MvcMiniProject.Controllers
 {
 	public class AddressController : Controller
 	{
+		private readonly ILogger<AddressController> _logger;
+
+		public AddressController(ILogger<AddressController> logger)
+		{
+			_logger = logger;
+		}
+
 		// GET: AddressController
 		public ActionResult Index()
 		{
@@ -25,8 +34,14 @@ namespace MvcMiniProject.Controllers
 		// POST: AddressController/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Create(IFormCollection collection)
+		public ActionResult Create(AddressModel data)
 		{
+			if (ModelState.IsValid == false)
+			{
+				_logger.LogWarning("The user submitted an invalid Address upon Create.");
+				return View();
+			}
+
 			try
 			{
 				return RedirectToAction(nameof(Index));

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MvcMessageWall.Areas.Identity.Data;
 
+// 11. Add Identity (Scaffolded Item) with Account/Login and Register/Login
+
 namespace MvcMessageWall.Data
 {
     public class MvcMessageWallContext : IdentityDbContext<MvcMessageWallUser>

@@ -27,11 +27,15 @@ namespace CalculationLibrary
 		public double Divide(double a, double b)
 		{
 			// return a / b;    -- If we divide 15/0  it returns a infinitive number instead of zero that we want.
-			double output = 0;
+			
+			// The fix:
+			double output = 0;  
+
 			if(b != 0)
 			{
 				output = a / b;
 			}
+
 			return output;
 		}
 	}

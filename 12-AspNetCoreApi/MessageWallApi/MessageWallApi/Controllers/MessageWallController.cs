@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MessageWallApi.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -22,10 +23,10 @@ namespace MessageWallApi.Controllers
 			_logger = logger;
 		}
 
-		// GET: api/<MessageWallController>
+		// GET: api/<MessageWallController?message=Test&id=4>
 		[HttpGet]
 
-		public IEnumerable<string> Get(string message = "")
+		public IEnumerable<string> Get(string message = "", int id = 0)
 		{
 			List<string> output = new List<string>  // 3. Add new Instance
 			{
@@ -46,7 +47,7 @@ namespace MessageWallApi.Controllers
 		}
 
 		// GET api/<MessageWallController>/5
-		[HttpGet("{id}")]
+		[HttpGet("{id}", Name = "Get")]  // 15. Add route Name
 		public string Get(int id)
 		{
 			return "value";
@@ -54,9 +55,10 @@ namespace MessageWallApi.Controllers
 
 		// POST api/<MessageWallController>
 		[HttpPost]
-		public void Post([FromBody] string message)  // 9. Change the parameter to message
+		public void Post([FromBody] MessageModel message)  // 9. Change the parameter to message / 13. Add MessageModel Api Model
 		{
-			_logger.LogInformation("Our message was {Message}", message);  // 10. Add variable logger.LogInformation
+			_logger.LogInformation("Our message was {Message}", message.Message);  // 10. Add variable logger.LogInformation
+																				   // 14. Add property Message after message.
 		}
 
 		// PUT api/<MessageWallController>/5

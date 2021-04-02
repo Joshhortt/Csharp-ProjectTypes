@@ -13,6 +13,8 @@ namespace MessageWallApi.Controllers
 	[ApiController]
 	public class MessageWallController : ControllerBase
 	{
+
+		// 8. Add Logging
 		private ILogger _logger;
 
 		public MessageWallController(ILogger<MessageWallController> logger)
@@ -32,8 +34,10 @@ namespace MessageWallApi.Controllers
 				"How are you?"
 			};
 
+			// https://localhost:44367/api/messageWall
+
 			// 5. Add condition if string is null or empty false
-			if(string.IsNullOrWhiteSpace(message) == false)
+			if (string.IsNullOrWhiteSpace(message) == false)
 			{
 				output.Add(message); // 6. add message to output
 			}
@@ -50,8 +54,9 @@ namespace MessageWallApi.Controllers
 
 		// POST api/<MessageWallController>
 		[HttpPost]
-		public void Post([FromBody] string value)
+		public void Post([FromBody] string message)  // 9. Change the parameter to message
 		{
+			_logger.LogInformation("Our message was {Message}", message);  // 10. Add variable logger.LogInformation
 		}
 
 		// PUT api/<MessageWallController>/5

@@ -23,6 +23,8 @@ namespace MessageWallApi.Controllers
 			_logger = logger;
 		}
 
+		// https://localhost:44367/weatherforecast
+
 		[HttpGet]
 		public IEnumerable<WeatherForecast> Get()
 		{
